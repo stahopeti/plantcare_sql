@@ -23,4 +23,4 @@ select ((
 		select REQ_LIGHT from PLANT_CONFIGS
 		where ID in (
 			select PLANT_CONFIG_ID from POTS 
-			where ID = FREQ_LIGHT.POT_ID)))*100 / COUNT(*)) as COUNTMINUSSUFFICIENT from FREQ_LIGHT;
+			where ID = FREQ_LIGHT.POT_ID)))*100 / COUNT(*)) as PERCENTAGEOFSUFFICIENT from FREQ_LIGHT;
